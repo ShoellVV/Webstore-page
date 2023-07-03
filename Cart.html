@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kamil Ejsmont">
+    <link rel="stylesheet" href="styles/cart.css">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+     <!--font awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Koszyk</title>
+</head>
+<body>
+    <!--main start-->
+    <main>
+        <!--nav start-->
+        <nav class="nav">
+            <div class="row">
+                <div class="logo">
+                    <a href="Website.html"><img src="./images/logo.png" alt=""></a>
+                </div>
+                <div class="cart">
+                    <a href="Cart.html"><span><i class="fa-solid fa-cart-shopping"></i><div class="productsQuantity"></div></span></a>
+                </div>
+                <div class="username">
+                    
+                </div>
+            </div>
+        </nav>
+        <!--nav koniec-->
+        <!--sekcja koszyk start-->
+        <section id="your-cart">
+            <h1>Twój koszyk</h1>
+            <div class="your-cart">
+                <div class="wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Produkt</th>
+                                <th>Ilość</th>
+                                <th>Cena</th>
+                                <th>Usuń</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                            
+                        </tbody>
+                    </table>
+                    <div class="btn-container">
+                        <a href="" class="go-further">Przejdź dalej <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="./Products.html"><i class="fa-solid fa-arrow-left"></i> Wróć do wyboru produktów</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--sekcja koszyk koniec-->
+    </main>
+    <!--main koniec-->
+    <!--footer start-->
+    <footer>
+        <p class="copyright">@2023 webstore All rights copy reserved</p>
+    </footer>
+    <!--footer koniec-->
+
+    <script src="./scripts/Webstore.js" type="module"></script>
+</body>
+</html>
