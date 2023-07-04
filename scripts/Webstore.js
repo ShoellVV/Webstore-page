@@ -115,7 +115,7 @@ class Webstore {
             this.cartProductsQuantity.style.display = "none";
         };;
 
-        if(location == "http://127.0.0.1:5500/Website.html"){
+        if(location == "https://shoellvv.github.io/Webstore-page/index.html"){
             this.setupHomePage();
             this.homePage.newsletterHandler();
             this.createProductCard(2);
@@ -127,7 +127,7 @@ class Webstore {
             this.products.addCartButtonHandler(this.productsButton);
         };
 
-        if(location == "http://127.0.0.1:5500/Products.html"){
+        if(location == "https://shoellvv.github.io/Webstore-page/Products.html"){
             this.createProductCard(4);
             // przyciski buttonów dodających produkty
             this.productsButton = document.querySelectorAll(".add-cart-btn");
@@ -135,14 +135,14 @@ class Webstore {
             this.products.addCartButtonHandler(this.productsButton);
         };
 
-        if(location == "http://127.0.0.1:5500/Cart.html"){
+        if(location == "https://shoellvv.github.io/Webstore-page/Cart.html"){
             const cart = sessionStorage.getItem("Cart");
             if(cart !== "[]"){
                 this.cart.init();
             }
         };
 
-        if(location == "http://127.0.0.1:5500/Login.html"){
+        if(location == "https://shoellvv.github.io/Webstore-page/Login.html"){
             this.login.getUsers();
         };
 
@@ -157,7 +157,7 @@ class Webstore {
         const username = JSON.parse(sessionStorage.getItem("User"));
         
         if(user !== null){
-            if(location != "http://127.0.0.1:5500/Website.html"){
+            if(location != "https://shoellvv.github.io/Webstore-page/index.html"){
                 nav.style.marginLeft = "20%";
             };
             loginContainer.innerHTML = `
@@ -165,7 +165,7 @@ class Webstore {
             <button class="logoutBtn">Wyloguj się</button>`
             this.login.logout();
         }else{
-            if(location != "http://127.0.0.1:5500/Website.html"){
+            if(location != "https://shoellvv.github.io/Webstore-page/index.html"){
                 loginContainer.style.display = "none";
             }else{
                 loginContainer.innerHTML = `<button class="login-btn"><span>Zaloguj się </span> <i class="fa-icon fa-solid fa-arrow-right fa-2xs"></i><i class="fa-icon fa-regular fa-user"></i></button>` 
