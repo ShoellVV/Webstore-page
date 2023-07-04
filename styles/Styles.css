@@ -176,8 +176,7 @@ header .logo {
 
 .username{
     display:flex;
-    flex-direction: column;
-    margin-right: 100px;
+    margin-right: 70px;
     margin-top: 10px;
 }
 
