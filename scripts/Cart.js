@@ -3,7 +3,7 @@ export class Cart {
     constructor() {
         this.productQuantity = parseInt(sessionStorage.getItem("productQuantity"));
 
-        if(location == "http://127.0.0.1:5500/Cart.html"){
+        if(location == "https://shoellvv.github.io/Webstore-page/Cart.html"){
             this.cartProductsQuantity = document.querySelector(".productsQuantity");
             this.tableBody = document.querySelector(".table-body");
             this.summaryExecuted = false;
