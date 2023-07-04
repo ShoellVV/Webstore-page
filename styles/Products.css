@@ -116,6 +116,10 @@ a{
     margin-right: 5px;
 }
 
+.username-span a, .username a i{
+    color: black;
+}
+
 .logoutBtn{
     margin-left: 20px;
     background: transparent;
