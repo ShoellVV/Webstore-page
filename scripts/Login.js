@@ -7,7 +7,7 @@ export class Login {
         this.products = new Products();
         this.productsQuantity = quantity;
 
-        if(location == "http://127.0.0.1:5500/Website.html"){
+        if(location == "https://shoellvv.github.io/Webstore-page/index.html"){
             // popuUp logowania
             this.loginPopUp = document.getElementById("popup");
             // button submit logowania
@@ -22,7 +22,7 @@ export class Login {
             this.msgLogin = document.querySelector(".msg-login");
         }
 
-        if(location == "http://127.0.0.1:5500/Login.html"){
+        if(location == "https://shoellvv.github.io/Webstore-page/Login.html"){
             //logged input
             this.loggedInput = document.querySelector(".logged-input");
             //imie
@@ -102,7 +102,7 @@ export class Login {
                 }
                 this.users.push(user);
             };
-            if(location == "http://127.0.0.1:5500/Login.html"){
+            if(location == "https://shoellvv.github.io/Webstore-page/Login.html"){
                 this.setAccountInformation();
             }
         });
@@ -120,7 +120,7 @@ export class Login {
         
         if(this.users.some(loginAttempt)){
             this.msgLogin.innerText = "";
-            window.location.href = "http://127.0.0.1:5500/Login.html";
+            window.location.href = "https://shoellvv.github.io/Webstore-page/Login.html";
             sessionStorage.setItem("Cart", "[]");
             sessionStorage.setItem("productQuantity", 0)
             sessionStorage.setItem("User",JSON.stringify(user.username));
@@ -199,7 +199,7 @@ export class Login {
             sessionStorage.removeItem("User");
             sessionStorage.setItem("productQuantity", 0);
             sessionStorage.setItem("Cart","[]");
-            location.href ="http://127.0.0.1:5500/Website.html";
+            location.href ="https://shoellvv.github.io/Webstore-page/index.html";
         })
     };
 
