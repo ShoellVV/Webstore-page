@@ -154,18 +154,18 @@ class Webstore {
 
         const loginContainer = document.querySelector(".username");
         const nav = document.querySelector(".nav .row");
-
+        const username = JSON.parse(sessionStorage.getItem("User"));
+        
         if(user !== null){
             if(location != "http://127.0.0.1:5500/Website.html"){
                 nav.style.marginLeft = "20%";
             };
             loginContainer.innerHTML = `
-            <span class="username-span"></span><i class="fa-icon fa-regular fa-user"></i>
+            <span class="username-span"><a href="Login.html">${username}<i class="fa-icon fa-regular fa-user"></i></a>
             <button class="logoutBtn">Wyloguj się</button>`
             this.login.logout();
         }else{
             if(location != "http://127.0.0.1:5500/Website.html"){
-                nav.style.marginLeft = "10%";
                 loginContainer.style.display = "none";
             }else{
                 loginContainer.innerHTML = `<button class="login-btn"><span>Zaloguj się </span> <i class="fa-icon fa-solid fa-arrow-right fa-2xs"></i><i class="fa-icon fa-regular fa-user"></i></button>` 
